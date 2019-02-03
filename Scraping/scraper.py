@@ -122,17 +122,19 @@ def summarize(ranks, sentences, length):
     #print(' '.join(final_sentences))
 
 
-db = firebase.database()
-db.child("users")
-users = db.get()
-print(users.val())
+#db = firebase.database()
+#db.child("users")
+#users = db.get()
+#print(users.val())
 
 
 def main(): 
 
     #////SUMMERIZER///
     content = read_file('texttt.txt')
+    print("Article is as follows: \n"+content)
     content = sanitize_input(content)
+    
 
     sentence_tokens, word_tokens = tokenize_content(content)  
     sentence_ranks,w = score_tokens(word_tokens, sentence_tokens)
@@ -147,10 +149,10 @@ def main():
 
     python_tweets = Twython(credentials['CONSUMER_KEY'], credentials['CONSUMER_SECRET']) 
     domain_list = ["com","org","co.in","in","edu","gov","uk","net"]  
+    print("\n\nRelevant links: \n\n")
+    
     for link in search(query, tld="com", tpe="nws", num=2, stop=1, pause=2):
-        with urllib.request.urlopen("http://www.python.org") as link:
-            #myfile = link.read()
-          print(link)
+        print(link)
         #print(myfile)
 
     query = {'q': w,  
@@ -165,9 +167,7 @@ def main():
         dict_['date'].append(status['created_at'])
         dict_['text'].append(status['text'])
         dict_['favorite_count'].append(status['favorite_count'])
-
-   
-     
+    print("\nTweets are as follows:\n")
     for i in dict_['text']:
       print(i)
   

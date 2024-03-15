@@ -9,12 +9,12 @@ Created on Sat Feb  2 12:44:27 2019
 <script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyChR1zw9NGrwMuD5Flm6WgVxScvcmv70F0",
-    authDomain: "testrun-a51b2.firebaseapp.com",
+    apiKey: "xxx",
+    authDomain: "xxx.firebaseapp.com",
     databaseURL: "https://testrun-a51b2.firebaseio.com",
     projectId: "testrun-a51b2",
     storageBucket: "testrun-a51b2.appspot.com",
-    messagingSenderId: "373762290703"
+    messagingSenderId: "373762280703"
   };
   firebase.initializeApp(config);
 </script>
@@ -25,7 +25,7 @@ Created on Sat Feb  2 12:44:27 2019
 
 import pyrebase
 config = {
-    "apiKey": "AIzaSyAob6vyddRr06ioOyoRit-h0V11tcsxYSc",
+    "apiKey": "xxx",
     "authDomain": "newsfacter.firebaseapp.com",
     "databaseURL": "https://newsfacter.firebaseio.com",
     "storageBucket": "newsfacter.appspot.com",}
@@ -42,7 +42,7 @@ firebase = pyrebase.initialize_app(config)
 # auth = firebase.auth()
 # 
 # # Log the user in
-# user = auth.sign_in_with_email_and_password("jayantrane811@gmail.com", "6mPA5yIz2updbRv4Y5VkjFqF6uqSGn2Qiy5IgR0n")
+# user = auth.sign_in_with_email_and_password("xxx@gmail.com", "xxx")
 # 
 # # Get a reference to the database service
 # db = firebase.database()
@@ -142,10 +142,10 @@ def main():
     
     #////TWITTER///
     credentials = {}  
-    credentials['CONSUMER_KEY']="4zJz3tkpAH2pyLHVY0E4bZmFa" 
-    credentials['CONSUMER_SECRET'] = "L8VF6fAYtfl5ouryAgSWfYzq0DnNdo0qdG81zS47XtSWKCHiXt"
-    credentials['ACCESS_TOKEN'] = "1423242756-RW3sdr0CtHvQP59WDAXAQoHIOUvAPaiWvjE19m1"
-    credentials['ACCESS_SECRET'] = "qSgmYthkhB569jdugkT4wV0ulNwE0CesOYGjVWfw0KrB8"
+    credentials['CONSUMER_KEY']="zzz" 
+    credentials['CONSUMER_SECRET'] = "xxx"
+    credentials['ACCESS_TOKEN'] = "1423242756-uuu"
+    credentials['ACCESS_SECRET'] = "ttt"
 
     python_tweets = Twython(credentials['CONSUMER_KEY'], credentials['CONSUMER_SECRET']) 
     domain_list = ["com","org","co.in","in","edu","gov","uk","net"]  

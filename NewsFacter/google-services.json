@@ -23,13 +23,13 @@
           }
         },
         {
-          "client_id": "96818524358-4ttt5na5uf6ur36891nqbhrk3j679mhg.apps.googleusercontent.com",
+          "client_id": "ss-xx.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD9tw2K3HyKgLaltuPtLeb4QWsvYPa4YlM"
+          "current_key": "ss"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "96818524358-4ttt5na5uf6ur36891nqbhrk3j679mhg.apps.googleusercontent.com",
+              "client_id": "xx-xx.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
